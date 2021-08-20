@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-color: #eae2f3;
+  }
+  
+  /* Style the header */
+  .header {
+   
+    padding: 80px;
+    text-align: center;
+  }
+  .section
+  {
+    text-align: center;
+    background: white;
+    width: 100%;
+  }
+ 
+  .cards {
+    
+    display: flex;
+    align-items: center;
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+
+    margin: auto;
+}
+
+.cards__item {
+    /* There will be 4 cards per row */
+    float: left;
+    /* width: 33.33%; */
+    padding: 15px;
+    flex-basis: 25%;
+    padding-left: 35px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.footer
+{
+  background-color: #eae2f3;
+}
+/*mobile*/
+@media screen and (max-width:600px) {
+  .cards {
+    width: 100%;
+    flex-basis: 170%; 
+  }
+}
